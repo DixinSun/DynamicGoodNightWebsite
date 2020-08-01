@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.basic {
+	background-image: url(figures/guid7.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.logo1 {
+	float: left; 
+	width: 800px; 
+	height: 100px; 
+	line-height:100px;
+	background-color: #000000; 
+
+}
+.logo2 {
+	float: left; 
+	width: 500px; 
+	height: 100px; 
+	line-height:100px;
+	background-color: #000000; 
+
+}
+
+.logo3 {
+	float: left; 
+	width: 170px; 
+	height: 100px; 
+	line-height:100px;
+	background-color: #000000; 
+
+}
+.ol1{
+  list-style-type:none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+.title {
+	width: 33%;
+	height: 70px;
+	float: left;
+}
+.text {
+	color: silver;
+	text-decoration: none;
+}
+
+.text2 {
+	font-family: Tempus Sans ITC;
+	color: red;
+}
+
+.text3 {
+	font-family: Times New Roman;
+	color: pink;
+}
+
+.div2left {
+	float: left;
+	width: 25%;
+	height: 680px;
+
+}
+.div2left img{
+	 height:690px;
+	 width:500px ;
+}
+
+.div2right {
+	float: left;
+	width: 70%;
+	height: 680px;
+	
+}
+
+.div2goods {
+	float: left;
+	width: 30%;
+	height: 300px;
+	text-align: center;
+}
+.div2goods img {
+	width:200px;
+	height:200px;
+}
+.div2goods p{
+	color: purple;
+	font-size:medium;
+	text-align: center
+}
