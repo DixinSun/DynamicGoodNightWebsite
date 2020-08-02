@@ -13,7 +13,7 @@
 			<img src="figures/classic.png" style="position:absolute; width: 100px; height: 100px; right:0px;" />
 			</div>
 			<div class="logo3">	<ol class="ol1">
-				<li><a href="index2.jsp" style="color: white;">GoodNight Center</a></li>
+				<li><a href="index3.jsp" style="color: white;">Manage Products</a></li>
 				<li><a href="index.jsp" style="color: white;">Log out</a></li>
 			</ol>
 			</div>

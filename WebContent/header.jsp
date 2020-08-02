@@ -14,7 +14,8 @@
 			</div>
 			<div class="logo3">	<ol class="ol1">
 				<li><a href="index.jsp" style="color: white;">Home</a></li>
-				<li><a href="login.html" style="color: white;">Log in</a></li>
+				<li><a href="managerLogin.jsp" style="color: white;">Manager Log in</a></li>
+				<li><a href="Login.jsp" style="color: white;">Log in</a></li>
 				<li><a href="register.jsp" style="color: white;">Sign up</a></li>
 			</ol>
 			</div>

@@ -40,6 +40,11 @@
 			document.devreg.name.focus();
 			return false;
 		}
+		if (domain == 0) {
+			alert("please choose a domain name");
+			document.devreg.domain.focus();
+			return false;
+		}
 		if (email == 0) {
 			alert("please enter email");
 			document.devreg.email.focus();
@@ -52,7 +57,7 @@
 			return false;
 		}
 		if (domain == 0) {
-			alert("please enter domain name");
+			alert("please select your situation");
 			document.devreg.domain.focus();
 			return false;
 		}

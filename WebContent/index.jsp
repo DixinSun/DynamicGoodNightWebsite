@@ -118,42 +118,7 @@
 				</p>
 		</div>
 <div style="clean: both;"></div>
-		<div>
-			<div class="div2left">
-				<img src="figures/bud.png"/>
-			</div>
-			<div class="div2right">
-				<div class="div2goods">
-					<a href="#"><img src="figures/ASMR.png" height="80px"
-						width="80px" />
-						<p style="color: silver; text-align: center">ASMR</p></a>
-				</div>
-				<div class="div2goods">
-					<a href="#"><img src="figures/meditation .png"/>
-						<p style="color: silver; text-align: center">Meditation</p></a>
-				</div>
-				<div class="div2goods">
-					<a href="#"><img src="figures/sleepingtaps.png" />
-						<p style="color: silver; text-align: center">Stories</p></a>
-				</div>
-				<div class="div2goods">
-					<a href="#"><img src="figures/guo.png" />
-						<p style="color: silver; text-align: center">Chinese
-							Traditional TalkShow</p></a>
-				</div>
-				<div class="div2goods">
-					<a href="#"><img src="figures/wave.png" />
-						<p style="color: silver; text-align: center">Songs</p></a>
-				</div>
-				<div class="div2goods">
-					<a href="#"><img src="figures/movie.png"/>
-						<p style="color: silver; text-align: center">Animate</p></a>
-				</div>
-			</div>
-		</div>
-		<div style="clean: both;"></div>
-	</div>
-	<iframe ID="Click Here TO Enter DreamerSpace" SRC="DreamerSpace.html"
+	<iframe SRC="DreamerSpace.html"
 		height="800px" width="1400px"></iframe>
 	<marquee behavior="SCROLL" direction="RIGHT" bgcolor="skyblue"
 		height="30" width="1500" hspace="0" vspace="0" loop="INFINITE"

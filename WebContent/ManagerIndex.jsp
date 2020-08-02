@@ -78,7 +78,7 @@
 </head>
 <body
 	style="background-image: url(figures/guid7.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
-	<%@include file="header2.jsp"%>
+	<%@include file="header3.jsp"%>
 	<div>
 		<marquee behavior="scroll" direction="left" hspace="0" vspace="0"
 			loop="INFINITE" scrollamount="9" scrolldelay="300">
@@ -94,57 +94,37 @@
 					<font>Good Night</font>
 				</h1>
 			</div>
-			<div class="title"></div>
-				<p style="color: silver">Tired? Lost your sleep?</p>
-
-				<p style="color: silver">You came to the right place.</p>
-
-				<p style="color: silver">I used to suffer from insomnia. After
-					years of trying, I found many ways to fall asleep quickly.</p>
-
-				<p style="color: silver">Here, every corner can help you fall
-					asleep quickly.</p>
-
-				</p>
-				<p class="text2">Now, please find a quiet place,</p>
-
-				<pstyle ="color:silver;">choose a way you like best,
-				</p>
-
-				<p class="text3">close your eyes,</p>
-				<p class="text">
-					and <sup>Have</sup> a Good <sub>Night</sub> ..
-				</p>
-		</div>
-<div style="clean: both;"></div>
+			<div style="width:2000px; height:200px;">
+			</div>
 		<div>
+		<div style="clear: both;"></div>
 			<div class="div2left">
 				<img src="figures/bud.png"/>
 			</div>
 			<div class="div2right">
 				<div class="div2goods">
-					<a href="form.jsp"><img src="figures/ASMR.png" height="80px"
+					<a href="#"><img src="figures/ASMR.png" height="80px"
 						width="80px" />
 						<p style="color: silver; text-align: center">ASMR</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form1.jsp"><img src="figures/meditation .png"/>
+					<a href="#"><img src="figures/meditation .png"/>
 						<p style="color: silver; text-align: center">Meditation</p></a>
 				</div>
-				<div class="form2.jsp">
+				<div class="div2goods">
 					<a href="#"><img src="figures/sleepingtaps.png" />
 						<p style="color: silver; text-align: center">Stories</p></a>
 				</div>
-				<div class="form3.jsp">
+				<div class="div2goods">
 					<a href="#"><img src="figures/guo.png" />
 						<p style="color: silver; text-align: center">Chinese
 							Traditional TalkShow</p></a>
 				</div>
-				<div class="form4.jsp">
+				<div class="div2goods">
 					<a href="#"><img src="figures/wave.png" />
 						<p style="color: silver; text-align: center">Songs</p></a>
 				</div>
-				<div class="form5.jsp">
+				<div class="div2goods">
 					<a href="#"><img src="figures/movie.png"/>
 						<p style="color: silver; text-align: center">Animate</p></a>
 				</div>
@@ -152,10 +132,5 @@
 		</div>
 		<div style="clean: both;"></div>
 	</div>
-	<iframe ID="Click Here TO Enter DreamerSpace" SRC="DreamerSpace.html"
-		height="800px" width="1400px"></iframe>
-	<marquee behavior="SCROLL" direction="RIGHT" bgcolor="skyblue"
-		height="30" width="1500" hspace="0" vspace="0" loop="INFINITE"
-		scrollamount="8" scrolldelay="500">Have a Good Night..</marquee>
 </body>
 </html>
