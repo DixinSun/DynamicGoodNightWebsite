@@ -36,6 +36,14 @@
         <url-pattern>/resources</url-pattern>
     </servlet-mapping>
     
+        <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>actions.adminActivations</servlet-class>
+    </servlet>
+       <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/adminActivations</url-pattern>
+    </servlet-mapping>
  <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

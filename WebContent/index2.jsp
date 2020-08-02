@@ -80,43 +80,6 @@
 	style="background-image: url(figures/guid7.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
 	<%@include file="header2.jsp"%>
 	<div>
-		<marquee behavior="scroll" direction="left" hspace="0" vspace="0"
-			loop="INFINITE" scrollamount="9" scrolldelay="300">
-			<img src="figures/moons.png" width="130" height="100" alt="Natural" />
-		</marquee>
-		<div style="clear: both;"></div>
-
-		<div>
-			<div class="title"></div>
-			<div class="title" style="background-image: url(figures/star.png);">
-				<h1 title="Author:Dixin"
-					style="text-align: center; font-size: 500%; color: skyblue;">
-					<font>Good Night</font>
-				</h1>
-			</div>
-			<div class="title"></div>
-				<p style="color: silver">Tired? Lost your sleep?</p>
-
-				<p style="color: silver">You came to the right place.</p>
-
-				<p style="color: silver">I used to suffer from insomnia. After
-					years of trying, I found many ways to fall asleep quickly.</p>
-
-				<p style="color: silver">Here, every corner can help you fall
-					asleep quickly.</p>
-
-				</p>
-				<p class="text2">Now, please find a quiet place,</p>
-
-				<pstyle ="color:silver;">choose a way you like best,
-				</p>
-
-				<p class="text3">close your eyes,</p>
-				<p class="text">
-					and <sup>Have</sup> a Good <sub>Night</sub> ..
-				</p>
-		</div>
-<div style="clean: both;"></div>
 		<div>
 			<div class="div2left">
 				<img src="figures/bud.png"/>
@@ -131,31 +94,27 @@
 					<a href="form1.jsp"><img src="figures/meditation .png"/>
 						<p style="color: silver; text-align: center">Meditation</p></a>
 				</div>
-				<div class="form2.jsp">
-					<a href="#"><img src="figures/sleepingtaps.png" />
+				<div class="div2goods">
+					<a href="form2.jsp"><img src="figures/sleepingtaps.png" />
 						<p style="color: silver; text-align: center">Stories</p></a>
 				</div>
-				<div class="form3.jsp">
-					<a href="#"><img src="figures/guo.png" />
+				<div class="div2goods">
+					<a href="form3.jsp"><img src="figures/guo.png" />
 						<p style="color: silver; text-align: center">Chinese
 							Traditional TalkShow</p></a>
 				</div>
-				<div class="form4.jsp">
-					<a href="#"><img src="figures/wave.png" />
+				<div class="div2goods">
+					<a href="form4.jsp"><img src="figures/wave.png" />
 						<p style="color: silver; text-align: center">Songs</p></a>
 				</div>
-				<div class="form5.jsp">
-					<a href="#"><img src="figures/movie.png"/>
+				<div class="div2goods">
+					<a href="form5.jsp"><img src="figures/movie.png"/>
 						<p style="color: silver; text-align: center">Animate</p></a>
 				</div>
 			</div>
 		</div>
 		<div style="clean: both;"></div>
 	</div>
-	<iframe ID="Click Here TO Enter DreamerSpace" SRC="DreamerSpace.html"
-		height="800px" width="1400px"></iframe>
-	<marquee behavior="SCROLL" direction="RIGHT" bgcolor="skyblue"
-		height="30" width="1500" hspace="0" vspace="0" loop="INFINITE"
-		scrollamount="8" scrolldelay="500">Have a Good Night..</marquee>
+
 </body>
 </html>

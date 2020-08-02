@@ -68,18 +68,18 @@ public class resources extends HttpServlet {
 //                  }
 //            }
             
-            if(ab.equals("ASMR")) {
-             String insertQuery = "insert into asmr(resourceid, audio_name,description,pric, date,album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+           if(ab.equals("ASMR")) {
+                String insertQuery = "insert into asmr(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
 
-            int i = st.executeUpdate(insertQuery);
-            if (i != 0) {
-                response.sendRedirect("index3.jsp?msg=Registration_success");
-            } else {
-                response.sendRedirect("edit1.jsp?msg=Register Error");
-            }
+                int i = st.executeUpdate(insertQuery);
+                if (i != 0) {
+                    response.sendRedirect("index3.jsp?msg=Registration_success");
+                } else {
+                    response.sendRedirect("edit1.jsp?msg=Register Error");
+                }
             }
             else if(ab.equals("Meditation")) {
-                String insertQuery = "insert into meditation(resourceid, audio_name,description,price,date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into meditation(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -99,7 +99,6 @@ public class resources extends HttpServlet {
                 }
             }
             else if(ab.equals("TalkShows")) {
-            	System.out.println("cool");
                 String insertQuery = "insert into talkshows(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
 
                 int i = st.executeUpdate(insertQuery);

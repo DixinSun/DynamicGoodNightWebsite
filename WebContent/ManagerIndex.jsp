@@ -78,59 +78,43 @@
 </head>
 <body
 	style="background-image: url(figures/guid7.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
-	<%@include file="header3.jsp"%>
+	<%@include file="header4.jsp"%>
 	<div>
-		<marquee behavior="scroll" direction="left" hspace="0" vspace="0"
-			loop="INFINITE" scrollamount="9" scrolldelay="300">
-			<img src="figures/moons.png" width="130" height="100" alt="Natural" />
-		</marquee>
-		<div style="clear: both;"></div>
-
 		<div>
-			<div class="title"></div>
-			<div class="title" style="background-image: url(figures/star.png);">
-				<h1 title="Author:Dixin"
-					style="text-align: center; font-size: 500%; color: skyblue;">
-					<font>Good Night</font>
-				</h1>
-			</div>
-			<div style="width:2000px; height:200px;">
-			</div>
-		<div>
-		<div style="clear: both;"></div>
 			<div class="div2left">
 				<img src="figures/bud.png"/>
 			</div>
 			<div class="div2right">
 				<div class="div2goods">
-					<a href="#"><img src="figures/ASMR.png" height="80px"
+					<a href="form.jsp"><img src="figures/ASMR.png" height="80px"
 						width="80px" />
 						<p style="color: silver; text-align: center">ASMR</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="#"><img src="figures/meditation .png"/>
+					<a href="form1.jsp"><img src="figures/meditation .png"/>
 						<p style="color: silver; text-align: center">Meditation</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="#"><img src="figures/sleepingtaps.png" />
+					<a href="form2.jsp"><img src="figures/sleepingtaps.png" />
 						<p style="color: silver; text-align: center">Stories</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="#"><img src="figures/guo.png" />
+					<a href="form3.jsp"><img src="figures/guo.png" />
 						<p style="color: silver; text-align: center">Chinese
 							Traditional TalkShow</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="#"><img src="figures/wave.png" />
+					<a href="form4.jsp"><img src="figures/wave.png" />
 						<p style="color: silver; text-align: center">Songs</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="#"><img src="figures/movie.png"/>
+					<a href="form5.jsp"><img src="figures/movie.png"/>
 						<p style="color: silver; text-align: center">Animate</p></a>
 				</div>
 			</div>
 		</div>
 		<div style="clean: both;"></div>
 	</div>
+
 </body>
 </html>
