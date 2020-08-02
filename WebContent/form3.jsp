@@ -33,32 +33,36 @@
 				<td style="text-align: center;">Album</td>
 				<td style="text-align: center;">Price</td>
 				<td style="text-align: center;">date</td>
+				<td style="text-align: center;">URL</td>
 			</tr>
 
 			<%
-				String resourceid, audio_name, description, price, album, date = null;
+				String id, audio_name, description,  album,price, date, url = null;
 			//                                                    String sql = "select * from bug where product='"+fs+"'";
 			String sql = "SELECT * from talkshows ";
 			Connection con = Connect.getCon();
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 			while (rs.next()) {
-				resourceid = rs.getString("resourceid");
+				id = rs.getString("resourceid");
 				audio_name = rs.getString("audio_name");
 				description = rs.getString("description");
-				price = rs.getString("price");
 				album = rs.getString("album");
+				price = rs.getString("price");
+				
 				date = rs.getString("date");
+				url = rs.getString("url");
 			%>
 			<tr
 				style="border: solid 1px; font-size: 15px; color: white; font-family: monospace; font-weight: bold;">
-				<td><a href="<%=request.getContextPath()%>/UserDeleteServlet?id=${resourceid}">Delete</a></td>
-				<td style="height: 20px; text-align: center"><%=resourceid%></td>
+				<td><a href="<%=request.getContextPath()%>/UserDeleteServlet?id=${id}">Delete</a></td>
+				<td style="height: 20px; text-align: center"><%=id%></td>
 				<td style="height: 20px; text-align: center"><%=audio_name%></td>
 				<td style="text-align: center;" width='-2%'><textarea readonly><%=description%></textarea></td>
 				<td style="text-align: center;" width='12%'><%=price%></td>
 				<td style="text-align: center;" width='12%'><%=album%></td>
 				<td style="text-align: center;" width='12%'><%=date%></td>
+				<td style="text-align: center;" width='12%'><%=url%></td>
 
 			</tr>
 			<%

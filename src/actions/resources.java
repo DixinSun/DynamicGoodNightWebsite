@@ -46,9 +46,9 @@ public class resources extends HttpServlet {
             String Audio_Name = request.getParameter("Audio_Name");
             System.out.println("resources: " + Audio_Name);
             String desc = request.getParameter("desc");
-            String resourceid = request.getParameter("resourceid");
             String price = request.getParameter("price");
             String album = request.getParameter("album");
+            String url = request.getParameter("url");
             String ab = album;
             System.out.println("album: " + ab);
             Connection con = Connect.getCon();
@@ -69,7 +69,7 @@ public class resources extends HttpServlet {
 //            }
             
            if(ab.equals("ASMR")) {
-                String insertQuery = "insert into asmr(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into asmr(audio_name,description, price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"','"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -79,7 +79,7 @@ public class resources extends HttpServlet {
                 }
             }
             else if(ab.equals("Meditation")) {
-                String insertQuery = "insert into meditation(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into meditation(audio_name,description, price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"','"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -89,7 +89,7 @@ public class resources extends HttpServlet {
                 }
             }
             else if(ab.equals("Stories")) {
-                String insertQuery = "insert into story(resourceid, audio_name,description,price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into story(audio_name,description,price, date, album,url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"','"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -99,7 +99,7 @@ public class resources extends HttpServlet {
                 }
             }
             else if(ab.equals("TalkShows")) {
-                String insertQuery = "insert into talkshows(resourceid, audio_name,description, price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into talkshows(audio_name,description, price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"','"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -110,7 +110,7 @@ public class resources extends HttpServlet {
             }
             else if(ab.equals("Songs")) {
             	
-                String insertQuery = "insert into songs(resourceid, audio_name,description,price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into songs(audio_name,description,price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"', '"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
@@ -120,7 +120,7 @@ public class resources extends HttpServlet {
                 }
             }
             else if(ab.equals("Animates")) {
-                String insertQuery = "insert into animates(resourceid, audio_name,description,price, date, album) values('" + resourceid + "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"')";
+                String insertQuery = "insert into animates(audio_name,description,price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"', '"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {
