@@ -110,7 +110,7 @@ public class resources extends HttpServlet {
             }
             else if(ab.equals("Songs")) {
             	
-                String insertQuery = "insert into songs(audio_name,description,price, date, album, url) values('" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"', '"+url+"')";
+                String insertQuery = "insert into songs(ID, audio_name,description,price, date, album, url) values('" + Audio_Name+ "','" + Audio_Name+ "','" + desc + "','"+price+"','"+adate+"','"+album+"', '"+url+"')";
 
                 int i = st.executeUpdate(insertQuery);
                 if (i != 0) {

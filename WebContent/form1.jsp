@@ -38,7 +38,6 @@
 
 			<%
 				String id, audio_name, description, album,price, date, url = null;
-			//                                                    String sql = "select * from bug where product='"+fs+"'";
 			String sql = "SELECT * from meditation";
 			Connection con = Connect.getCon();
 			Statement st = con.createStatement();

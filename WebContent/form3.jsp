@@ -38,13 +38,12 @@
 
 			<%
 				String id, audio_name, description,  album,price, date, url = null;
-			//                                                    String sql = "select * from bug where product='"+fs+"'";
 			String sql = "SELECT * from talkshows ";
 			Connection con = Connect.getCon();
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 			while (rs.next()) {
-				id = rs.getString("resourceid");
+				id = rs.getString("id");
 				audio_name = rs.getString("audio_name");
 				description = rs.getString("description");
 				album = rs.getString("album");
