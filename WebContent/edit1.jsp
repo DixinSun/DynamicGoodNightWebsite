@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>TL LOGIN</title>
+<title>Adding Resources</title>
 <meta charset="utf-8">
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your keywords">

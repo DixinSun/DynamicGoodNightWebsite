@@ -86,29 +86,29 @@
 			</div>
 			<div class="div2right">
 				<div class="div2goods">
-					<a href="form.jsp"><img src="figures/ASMR.png" height="80px"
+					<a href="formuser.jsp"><img src="figures/ASMR.png" height="80px"
 						width="80px" />
 						<p style="color: silver; text-align: center">ASMR</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form1.jsp"><img src="figures/meditation .png"/>
+					<a href="form1user.jsp"><img src="figures/meditation .png"/>
 						<p style="color: silver; text-align: center">Meditation</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form2.jsp"><img src="figures/sleepingtaps.png" />
+					<a href="form2user.jsp"><img src="figures/sleepingtaps.png" />
 						<p style="color: silver; text-align: center">Stories</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form3.jsp"><img src="figures/guo.png" />
+					<a href="form3user.jsp"><img src="figures/guo.png" />
 						<p style="color: silver; text-align: center">Chinese
 							Traditional TalkShow</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form4.jsp"><img src="figures/wave.png" />
+					<a href="form4user.jsp"><img src="figures/wave.png" />
 						<p style="color: silver; text-align: center">Songs</p></a>
 				</div>
 				<div class="div2goods">
-					<a href="form5.jsp"><img src="figures/movie.png"/>
+					<a href="form5user.jsp"><img src="figures/movie.png"/>
 						<p style="color: silver; text-align: center">Animate</p></a>
 				</div>
 			</div>

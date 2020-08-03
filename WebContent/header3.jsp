@@ -14,6 +14,9 @@
 			</div>
 			<div class="logo3">	<ol class="ol1">
 				<li><a href="index3.jsp" style="color: white;">Manage Products</a></li>
+				<li><a href="admin.jsp" style="color: white;">Administrator Log in</a></li>
+								<li><a href="Login.jsp" style="color: white;">Log in</a></li>
+				
 				<li><a href="index.jsp" style="color: white;">Log out</a></li>
 			</ol>
 			</div>

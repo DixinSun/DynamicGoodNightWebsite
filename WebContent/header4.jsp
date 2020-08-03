@@ -13,7 +13,10 @@
 			<img src="figures/classic.png" style="position:absolute; width: 100px; height: 100px; right:0px;" />
 			</div>
 			<div class="logo3">	<ol class="ol1">
-				<li><a href="index4.jsp" style="color: white;">View Products</a></li>
+				<li><a href="index4.jsp" style="color: white;">Home</a></li>
+				<li><a href="managerLogin.jsp" style="color: white;">Manager Log in</a></li>
+								<li><a href="Login.jsp" style="color: white;">Log in</a></li>
+				
 				<li><a href="index.jsp" style="color: white;">Log out</a></li>
 			</ol>
 			</div>

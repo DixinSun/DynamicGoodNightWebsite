@@ -8,16 +8,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script>
-function delProduct(pid) {
-    //alert();
-    var isDel = confirm("Are you sure to delete it?？")
-    if(isDel){
-        location.href = "${pageContext.request.contextPath}/adminDelProduct?pid="+pid;
-    }
-}
-</script>
-<title>TalkShows</title>
+
+<title>Animates</title>
 </head>
 <body
 	style="background-image: url(figures/guid7.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
@@ -36,13 +28,12 @@ function delProduct(pid) {
 				<td style="text-align: center;">Price</td>
 				<td style="text-align: center;">date</td>
 				<td style="text-align: center;">URL</td>
-				<td style="text-align: center;">Delete</td>
 			</tr>
 	  
 			<%
 			String id, audio_name, description, album, price, date, url = null;
 			String Delete="";
-			String sql = "SELECT * from talkshows";
+			String sql = "SELECT * from animates";
 			Connection con = Connect.getCon();
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
@@ -55,7 +46,6 @@ function delProduct(pid) {
 				price = rs.getString("price");
 				date = rs.getString("date");
 				url = rs.getString("url");
-				Delete = rs.getString("edit");
 			%>
 			<tr
 				style="border: solid 1px; font-size: 15px; color: white; font-family: monospace; font-weight: bold;">
@@ -67,7 +57,6 @@ function delProduct(pid) {
 				
 				<td style="text-align: center;" width='12%'><%=date%></td>
 				<td style="text-align: center;" width='12%'><%=url%></td>
-                 <td style="text-align: center;"><a href="delete.jsp?<%=id%>"><input type='button' value='delete'></a></td>
 
 			</tr>
 			<%

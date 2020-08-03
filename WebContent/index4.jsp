@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>TPA Home</title>
+<title>Administrator Page</title>
 <meta charset="utf-8">
 
 <meta name="description" content="Your description">
@@ -43,7 +43,7 @@
             <h5 style="color: purple;font-size: 35px">Actions</h5>
             <ol class="list1">
                 <li><a style="font-size: 20px;color:#8080ff;" href="index4.jsp">Home</a></li>
-                        <li><a  style="font-size: 20px;color:#8080ff;" href="ManagerIndex.jsp">View Products</a></li>
+                        <li><a  style="font-size: 20px;color:#8080ff;" href="index3.jsp">Manage products</a></li>
                 <li><a  style="font-size: 20px;color:#8080ff;" href="loger.jsp">Users</a></li>
                 <li><a style="font-size: 20px;color:#8080ff;" href="index.jsp">Logout</a></li>
             </ol>

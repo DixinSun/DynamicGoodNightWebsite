@@ -9,7 +9,7 @@
     try {
 
         String id = request.getQueryString();
-        String sql = "update user set status = 'Activated' where dict_id='" + id + "'";
+        String sql = "DELETE FROM user WHERE dict_id ='" + id + "'";
 
         Connection con = Connect.getCon();
         Statement st = con.createStatement();
@@ -19,7 +19,7 @@
         } else {
             response.sendRedirect("loger.jsp?Pls_Check");
         }
-    } catch (Exception e) {
+    } catch (Exception e){
         e.printStackTrace();;
     }
 

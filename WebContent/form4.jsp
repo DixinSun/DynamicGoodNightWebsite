@@ -9,13 +9,15 @@
 <head>
 <meta charset="UTF-8">
 <script>
-	function del(obj) {
-		var trId = obj.parentNode.parentNode.id;
-		var trObj = document.getElementById(trId);
-		document.getElementById("tb").removeChild(trObj);
-	}
+function delProduct(pid) {
+    //alert();
+    var isDel = confirm("Are you sure to delete it?？")
+    if(isDel){
+        location.href = "${pageContext.request.contextPath}/adminDelProduct?pid="+pid;
+    }
+}
 </script>
-<title>Insert title here</title>
+<title>Songs</title>
 </head>
 <body
 	style="background-image: url(figures/guid7.png); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
@@ -26,7 +28,7 @@
 		<table style="width: 1000px;" id="tb">
 			<tr
 				style="border: solid 1px; font-size: 20px; color: burlywood; font-family: monospace; font-weight: bold;" id="1st">
-				<td style="text-align: center;">Delete</td>
+				
 				<td style="text-align: center; height: 40px">ID</td>
 				<td style="text-align: center; height: 40px">Name</td>
 				<td style="text-align: center;">Description</td>
@@ -34,27 +36,29 @@
 				<td style="text-align: center;">Price</td>
 				<td style="text-align: center;">date</td>
 				<td style="text-align: center;">URL</td>
+				<td style="text-align: center;">Delete</td>
 			</tr>
-
+	  
 			<%
-				String id, audio_name, description, album, price, date, url = null;
+			String id, audio_name, description, album, price, date, url = null;
+			String Delete="";
 			String sql = "SELECT * from songs";
 			Connection con = Connect.getCon();
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
+		
 			while (rs.next()) {
 				id = rs.getString("id");
 				audio_name = rs.getString("audio_name");
 				description = rs.getString("description");
 				album = rs.getString("album");
 				price = rs.getString("price");
-			
 				date = rs.getString("date");
-				date = rs.getString("url");
+				url = rs.getString("url");
+				Delete = rs.getString("edit");
 			%>
 			<tr
 				style="border: solid 1px; font-size: 15px; color: white; font-family: monospace; font-weight: bold;">
-				<td><a href="<%=request.getContextPath()%>/UserDeleteServlet?id=${id}">Delete</a></td>
 				<td style="height: 20px; text-align: center"><%=id%></td>
 				<td style="height: 20px; text-align: center"><%=audio_name%></td>
 				<td style="text-align: center;" width='-2%'><textarea readonly><%=description%></textarea></td>
@@ -63,6 +67,7 @@
 				
 				<td style="text-align: center;" width='12%'><%=date%></td>
 				<td style="text-align: center;" width='12%'><%=url%></td>
+                 <td style="text-align: center;"><a href="delete.jsp?<%=id%>"><input type='button' value='delete'></a></td>
 
 			</tr>
 			<%

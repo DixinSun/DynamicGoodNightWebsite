@@ -35,19 +35,8 @@
 <div class="container padBot" style="height: 600px;background-image: url('figures/pmain.png');background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;"><br>
-    <div class="row" style="margin-left: 20px">
-         <article class="span4" style="color: white">
-            <h5 style="color: purple;font-size: 35px">Actions</h5>
-            <ol class="list1">
-                <li><a style="font-size: 20px;color:#8080ff;" href="index4.jsp">Home</a></li>
-                        <li><a  style="font-size: 20px;color:#8080ff;" href="ManagerIndex.jsp">View Products</a></li>
-                <li><a  style="font-size: 20px;color:#8080ff;" href="loger.jsp">Users</a></li>
-                <li><a style="font-size: 20px;color:#8080ff;" href="index.jsp">Logout</a></li>
-            </ol>
-        </article>
 
-        
-         <article class="span8 about-box" style="margin-top: -150px">
+         <article class="span8 about-box" style="margin-top: -10px">
             <h5 style="margin-left: 450px; font-size:250%;">Customers</h5>
                         <table style="margin-left: 200px;width: 800px">
                             <tr style="border: solid 1px;font-size: 20px;color:burlywood;font-family: monospace;font-weight: bold;">
@@ -59,10 +48,14 @@
                                 <td style="text-align: center;">Contact</td>
                                 <td style="text-align: center;">Location</td>
                                 <td style="text-align: center;">DateOfJoining</td>
+                                 <td style="text-align: center;">Status</td>
+                                 <td style="text-align: center;">Delete</td>
          
                             </tr>
                             <%
-                                String id, UserName, Name,Email, SleepQuality,Contact, Location, DateOfJoining = null;
+                                String id, UserName, Name,Email, SleepQuality,Contact, Location, DateOfJoining= null;
+                                String Status ="ClickToActivate";
+                                String Delete ="";
                                 String sql = "select * from user";
                                 Connection con = Connect.getCon();
                                 Statement st = con.createStatement();
@@ -76,6 +69,8 @@
                                     Contact = rs.getString("mobile");
                                     Location = rs.getString("place");
                                     DateOfJoining = rs.getString("Day");
+                                    Status = rs.getString("status");
+                                    Delete = rs.getString("edit");
                             %>
                             <tr style="border: solid 1px;font-size: 15px;color: white;font-family: monospace;font-weight: bold;">
                                 <td style="height: 20px;text-align: center"><%=id%></td>
@@ -86,7 +81,9 @@
                                 <td style="text-align: center;" width='12%'><%=Contact%></td>
                                 <td style="text-align: center;" width='12%'><%=Location%></td>
                                 <td style="text-align: center;" width='12%'><%=DateOfJoining%></td>
-                                <td style="text-align: center;"><a style="color: white" href="activate.jsp?<%=id%>"></a></td>
+                                <td style="text-align: center;"><a style="color: white" href="activate.jsp?<%=id%>"><%=Status%></a></td>
+                                <td style="text-align: center;"><a href="delete.jsp?<%=id%>"><input type='button' value='delete'></a></td>
+                                
                             </tr>
                             <%
                                 }

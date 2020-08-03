@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>TPA Login</title>
+<title>Manager Login</title>
 <meta charset="utf-8">
 
 <meta name="description" content="Your description">

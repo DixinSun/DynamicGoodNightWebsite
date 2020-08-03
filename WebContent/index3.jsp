@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>TPA Home</title>
+<title>Manager Page</title>
 <meta charset="utf-8">
 
 <meta name="description" content="Your description">

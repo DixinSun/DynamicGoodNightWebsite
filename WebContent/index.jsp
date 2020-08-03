@@ -85,8 +85,7 @@
 			loop="INFINITE" scrollamount="9" scrolldelay="300">
 			<img src="figures/moons.png" width="130" height="100" alt="Natural" />
 		</marquee>
-		<div style="clear: both;"></div>
-
+		<div style="clean: both;"></div>
 		<div>
 			<div class="title"></div>
 			<div class="title" style="background-image: url(figures/star.png);">
@@ -96,32 +95,66 @@
 				</h1>
 			</div>
 			<div class="title"></div>
-				<p style="color: silver">Tired? Lost your sleep?</p>
+			<p style="color: silver">Tired? Lost your sleep?</p>
 
-				<p style="color: silver">You came to the right place.</p>
+			<p style="color: silver">You came to the right place.</p>
 
-				<p style="color: silver">I used to suffer from insomnia. After
-					years of trying, I found many ways to fall asleep quickly.</p>
+			<p style="color: silver">I used to suffer from insomnia. After
+				years of trying, I found many ways to fall asleep quickly.</p>
 
-				<p style="color: silver">Here, every corner can help you fall
-					asleep quickly.</p>
+			<p style="color: silver">Here, every corner can help you fall
+				asleep quickly.</p>
 
-				</p>
-				<p class="text2">Now, please find a quiet place,</p>
+			</p>
+			<p class="text2">Now, please find a quiet place,</p>
 
-				<pstyle ="color:silver;">choose a way you like best,
-				</p>
+			<pstyle="color:silver;">choose a way you like best,
+			</p>
 
-				<p class="text3">close your eyes,</p>
-				<p class="text">
-					and <sup>Have</sup> a Good <sub>Night</sub> ..
-				</p>
+			<p class="text3">close your eyes,</p>
+			<p class="text">
+				and <sup>Have</sup> a Good <sub>Night</sub> ..
+			</p>
 		</div>
-<div style="clean: both;"></div>
-	<iframe SRC="DM.html"
-		height="800px" width="1400px"></iframe>
-	<marquee behavior="SCROLL" direction="RIGHT" bgcolor="skyblue"
-		height="30" width="1500" hspace="0" vspace="0" loop="INFINITE"
-		scrollamount="8" scrolldelay="500">Have a Good Night..</marquee>
+		<div>
+			<div class="div2left">
+				<img src="figures/bud.png" />
+			</div>
+			<div class="div2right">
+				<div class="div2goods">
+					<a><img src="figures/ASMR.png" height="80px" width="80px" />
+						<p style="color: silver; text-align: center">ASMR</p></a>
+				</div>
+				<div class="div2goods">
+					<a><img src="figures/meditation .png" />
+						<p style="color: silver; text-align: center">Meditation</p></a>
+				</div>
+				<div class="div2goods">
+					<a><img src="figures/sleepingtaps.png" />
+						<p style="color: silver; text-align: center">Stories</p></a>
+				</div>
+				<div class="div2goods">
+					<a><img src="figures/guo.png" />
+						<p style="color: silver; text-align: center">Chinese
+							Traditional TalkShow</p></a>
+				</div>
+				<div class="div2goods">
+					<a><img src="figures/wave.png" />
+						<p style="color: silver; text-align: center">Songs</p></a>
+				</div>
+				<div class="div2goods">
+					<a><img src="figures/movie.png" />
+						<p style="color: silver; text-align: center">Animate</p></a>
+				</div>
+			</div>
+		</div>
+		<div style="clean: both;"></div>
+
+		<div style="clean: both;"></div>
+		<iframe SRC="DM.html" height="800px" width="1400px"></iframe>
+		<marquee behavior="SCROLL" direction="RIGHT" bgcolor="skyblue"
+			height="30" width="1500" hspace="0" vspace="0" loop="INFINITE"
+			scrollamount="8" scrolldelay="500">Have a Good Night..</marquee>
+	</div>
 </body>
 </html>
